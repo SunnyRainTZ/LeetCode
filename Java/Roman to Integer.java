@@ -4,7 +4,7 @@ Given a roman numeral, convert it to an integer.
 Input is guaranteed to be within the range from 1 to 3999.
 */
 
-思路1：将罗马数字对应数值存在Map中，如果当前罗马数字比其后一个小，则减去当前数字，否则加当前数字。
+思路1：将罗马数字对应数值存在Map中，如果当前罗马数字比其后一个小，则减去当前数字，否则加当前数字。注意Map中put的是Character而不是String。
     public int romanToInt(String s) {
         Map<Character,Integer> map = new HashMap<>();
         map.put('I', 1);
