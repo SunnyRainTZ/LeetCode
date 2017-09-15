@@ -27,7 +27,7 @@ The brackets must close in the correct order, "()" and "()[]{}" are all valid bu
         return stack.isEmpty();
     }
     
-1、stack的API不熟悉
+1、stack的API不熟悉，stack内如果没有元素时pop()和peek()都会报错
       stack.add();
       stack.peek();
       stack.pop();
