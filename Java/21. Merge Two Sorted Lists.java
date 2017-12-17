@@ -60,7 +60,7 @@ class Solution {
     }
 }
 
-递归实现：
+递归实现：段代码实际上是一个栈结构的递归方法。因此它会使用额外的空间，可能会导致堆栈溢出。
 public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
     if(l1 == null){
         return l2;
