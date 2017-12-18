@@ -7,18 +7,18 @@ Example 1:
 Example 2:
   Input: haystack = "aaaaa", needle = "bba"
   Output: -1
-  */
+*/
   
-  class Solution {
-    public int strStr(String haystack, String needle) {
-        if(haystack == null || needle == null){
-            return -1;
-        }
-        for(int i=0 ; i<=haystack.length() - needle.length(); i++){
-            if(haystack.substring(i,i+needle.length()).equals(needle)){
-                return i;
-            }
-        }
-        return -1;
-    }
+class Solution {
+  public int strStr(String haystack, String needle) {
+      if(haystack == null || needle == null){
+          return -1;
+      }
+      for(int i=0 ; i<=haystack.length() - needle.length(); i++){
+          if(haystack.substring(i,i+needle.length()).equals(needle)){
+              return i;
+          }
+      }
+      return -1;
+  }
 }
