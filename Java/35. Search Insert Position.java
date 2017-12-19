@@ -40,5 +40,5 @@ public int searchInsert(int[] A, int target) {
     }
     return low;
 }
-
+改进：mid = (high - low)/2 + low;  可以避免(high + low)太大时的溢出问题。
 
