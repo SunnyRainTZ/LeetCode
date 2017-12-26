@@ -8,8 +8,7 @@ Your algorithm should use only constant space. You may not modify the values in 
 /*
 思路：设置一个计数器，计数器为奇数时将当前节点和下一个节点的数字交换。
 */
-
-class Solution {
+class Solution 
     public ListNode swapPairs(ListNode head) {
         if(head == null){
             return null;
